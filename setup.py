@@ -12,6 +12,7 @@ except ImportError: # for pip <= 9.0.3
 from runpy import run_path
 
 install_reqs = parse_requirements('requirements.txt', session=False)
+print(install_reqs)
 install_requires = [str(ir.req) for ir in install_reqs]
 
 def get_version():
